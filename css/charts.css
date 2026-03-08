@@ -1,0 +1,75 @@
+/* Responsive container of the svg element */
+.responsive-svg-container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+@media screen and (max-width: 596px) {
+  .responsive-svg-container {
+    margin-bottom: 16px;
+  }
+}
+
+/* ── AXIS LABEL ──────────────────────────────────────────── */
+.axis-label {
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-size: 13px;
+  fill: #4a3820;
+}
+
+/* ── AXES ──────────────────────────────────────────────── */
+.axis text {
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-size: 11px;
+  fill: #6b5840;
+}
+
+.axis .domain {
+  stroke: #d4c8b8;
+}
+
+.axis .tick line {
+  stroke: #e8ddd0;
+}
+
+/* ── HISTOGRAM BARS ────────────────────────────────────── */
+rect {
+  transition: fill 0.15s;
+}
+
+/* ── SCATTER DOTS ──────────────────────────────────────── */
+.dot {
+  transition: opacity 0.15s, r 0.15s;
+}
+
+/* ── TOOLTIP ───────────────────────────────────────────── */
+.tooltip {
+  pointer-events: none;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.25));
+}
+
+.tooltip rect {
+  fill: #2c2016;
+}
+
+.tooltip text {
+  fill: #fff;
+  font-family: 'Inter', 'Arial', sans-serif;
+}
+
+/* ── LEGEND ────────────────────────────────────────────── */
+.legend text {
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-size: 12px;
+  fill: #4a3820;
+}
+
+/* ── GRIDLINES ─────────────────────────────────────────── */
+.grid line {
+  stroke: #ede5d8;
+  stroke-dasharray: 4,3;
+}
+
+.grid .domain { display: none; }
+
+/* Code based on Dufour and Meeks (2024) */
